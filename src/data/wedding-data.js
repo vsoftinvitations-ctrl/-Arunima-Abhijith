@@ -16,7 +16,12 @@ export const weddingData = {
       mother: "Reji Madhu",
       houseName: "",
       city: ""
-    }
+    },
+    siblingLabel: "Sister",
+    siblingsDisplay: "Athulya Madhu",
+    siblings: [
+      { name: "Athulya Madhu", relation: "Sister" }
+    ]
   },
   groom: {
     name: "Abhijith V Nair",
@@ -29,7 +34,14 @@ export const weddingData = {
       mother: "Usha Vinayachandran",
       houseName: "",
       city: ""
-    }
+    },
+    siblingLabel: "Siblings",
+    siblingsDisplay: "Sreehari, Aswathy, Rajagopal Sk",
+    siblings: [
+      { name: "Sreehari", relation: "Brother" },
+      { name: "Aswathy", relation: "Sister" },
+      { name: "Rajagopal Sk", relation: "Brother" }
+    ]
   },
 
   // Wedding Muhurtham & Event Details

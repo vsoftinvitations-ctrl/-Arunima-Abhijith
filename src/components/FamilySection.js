@@ -21,6 +21,13 @@ export function renderFamilySection() {
             <br />
             &amp; Smt. ${bride.parents.mother}
           </div>
+          ${bride.siblingsDisplay ? `
+            <div class="family-card-divider"></div>
+            <div class="family-siblings-block">
+              <span class="family-sibling-label">${bride.siblingLabel || 'Sister'}</span>
+              <span class="family-sibling-names">${bride.siblingsDisplay}</span>
+            </div>
+          ` : ''}
         </div>
 
         <!-- Groom's Family -->
@@ -31,6 +38,13 @@ export function renderFamilySection() {
             <br />
             &amp; Smt. ${groom.parents.mother}
           </div>
+          ${groom.siblingsDisplay ? `
+            <div class="family-card-divider"></div>
+            <div class="family-siblings-block">
+              <span class="family-sibling-label">${groom.siblingLabel || 'Siblings'}</span>
+              <span class="family-sibling-names">${groom.siblingsDisplay}</span>
+            </div>
+          ` : ''}
         </div>
       </div>
     </section>

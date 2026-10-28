@@ -817,6 +817,34 @@ section {
   max-width: 400px;
 }
 
+.couple-sibling-line {
+  margin-top: 0.6rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  min-height: 2.2em;
+}
+
+.couple-sibling-label {
+  font-family: var(--font-serif-en);
+  font-weight: 600;
+  color: var(--gold-deep);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.couple-sibling-name {
+  color: var(--earth-brown);
+  font-weight: 500;
+}
+
 .couple-card-parents .text-muted {
   color: var(--earth-brown-muted);
 }
@@ -1171,8 +1199,12 @@ section {
 }
 
 .family-card {
-  padding: 2rem;
+  padding: 2.25rem 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .family-role-badge {
@@ -1196,6 +1228,38 @@ section {
 .family-house-address {
   font-size: 0.95rem;
   color: var(--earth-brown-muted);
+}
+
+.family-card-divider {
+  width: 44px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-deep), transparent);
+  margin: 1.25rem auto 1rem auto;
+}
+
+.family-siblings-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.family-sibling-label {
+  font-family: var(--font-serif-en);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 600;
+}
+
+.family-sibling-names {
+  font-family: var(--font-serif-en);
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--earth-brown);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
 /* ==========================================================================
