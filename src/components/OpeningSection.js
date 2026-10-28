@@ -3,24 +3,12 @@ import { weddingData } from '../data/wedding-data.js';
 export function renderOpeningSection() {
   const { bride, groom, event } = weddingData;
 
-  // Derive couple initials for the monogram
-  const brideInitial = bride.name.trim().charAt(0);
-  const groomInitial = groom.name.trim().charAt(0);
-
   return `
     <section class="opening-section" id="opening">
       <div class="opening-card-container">
         <div class="opening-border-motif"></div>
 
         <div class="opening-content">
-          <!-- Minimal Royal Monogram Crest -->
-          <div class="opening-monogram reveal-on-scroll revealed">
-            <div class="monogram-seal">
-              <span class="monogram-letter">${groomInitial}</span>
-              <span class="monogram-symbol">&amp;</span>
-              <span class="monogram-letter">${brideInitial}</span>
-            </div>
-          </div>
 
           <!-- Minimal Standard Pre-title -->
           <div class="opening-pretitle reveal-on-scroll revealed reveal-delay-1">
@@ -34,9 +22,9 @@ export function renderOpeningSection() {
 
           <!-- Couple Names (Central Visual Focus) -->
           <h1 class="opening-couple-names reveal-on-scroll revealed reveal-delay-2">
-            <span class="couple-name groom-name">${groom.name}</span>
+            <span class="couple-name bride-name">${bride.shortName || 'Dr. Arunima'}</span>
             <span class="opening-couple-ampersand">&amp;</span>
-            <span class="couple-name bride-name">${bride.name}</span>
+            <span class="couple-name groom-name">${groom.shortName || 'Abhijith'}</span>
           </h1>
 
           <!-- Date & Location Minimal Standard Block -->
@@ -69,7 +57,7 @@ export function initOpeningInteractions() {
   const scrollBtn = document.getElementById('scroll-to-invitation');
   if (scrollBtn) {
     scrollBtn.addEventListener('click', () => {
-      const target = document.getElementById('couple-introduction');
+      const target = document.getElementById('getting-married') || document.getElementById('couple-introduction');
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
       }

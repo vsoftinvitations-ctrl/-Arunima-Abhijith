@@ -5,7 +5,7 @@ export function renderCountdown() {
 
   return `
     <section id="countdown-section" class="countdown-section">
-      <div class="kasavu-card" style="padding: clamp(2rem, 5vw, 3.5rem) 1.5rem; max-width: 720px; margin: 0 auto;">
+      <div class="kasavu-card countdown-card" style="padding: clamp(2rem, 5vw, 3.5rem) 1.5rem; max-width: 720px; margin: 0 auto;">
         <h2 class="countdown-heading reveal-on-scroll">${texts.countdownHeading}</h2>
 
         <div class="countdown-grid reveal-on-scroll">

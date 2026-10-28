@@ -4,15 +4,15 @@ export function renderWeddingDetails() {
   const { texts, event } = weddingData;
 
   // Google Calendar URL generator
-  const startDateFormatted = "20270215T050000Z"; // 10:30 AM IST is 05:00 UTC
-  const endDateFormatted = "20270215T090000Z";
+  const startDateFormatted = "20261212T064500Z"; // 12:15 PM IST is 06:45 UTC
+  const endDateFormatted = "20261212T093000Z";   // 03:00 PM IST is 09:30 UTC
   const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.googleCalendarTitle)}&dates=${startDateFormatted}/${endDateFormatted}&details=${encodeURIComponent(event.googleCalendarDescription)}&location=${encodeURIComponent(event.venueName + ', ' + event.city)}`;
 
   return `
     <section id="invitation-details" class="invitation-details-section">
       <!-- SECTION 2: INVITATION HEADER -->
       <div class="invitation-section-header reveal-on-scroll">
-        <h2 class="invitation-title-ml">${texts.invitationHeadingMalayalam}</h2>
+        <h2 class="invitation-title-en">${texts.invitationHeading || 'Cordially Inviting You'}</h2>
         <p class="invitation-subtitle-en">${texts.invitationSubtitleEng}</p>
         <div class="section-divider">
           <img src="/assets/kerala-divider.svg" alt="Kerala Divider" width="280" height="28" />
@@ -21,22 +21,19 @@ export function renderWeddingDetails() {
 
       <!-- SECTION 3: WEDDING DETAILS CARD -->
       <div class="kasavu-card wedding-details-card reveal-on-scroll">
-        <div class="details-muhurtham-label">${event.muhurthamMalayalam}</div>
+        <div class="details-muhurtham-label">${event.muhurthamLabel || 'Wedding Ceremony'}</div>
 
         <div class="details-grid">
           <!-- Date Item -->
           <div class="details-item">
             <span class="details-label">Date</span>
             <span class="details-val-primary">${event.dateDisplay}</span>
-            <span class="details-val-secondary">${event.dateMalayalam}</span>
-            <span class="details-val-secondary font-ml">${event.malayalamKollamEra}</span>
           </div>
 
           <!-- Time Item -->
           <div class="details-item">
             <span class="details-label">Auspicious Time</span>
             <span class="details-val-primary">${event.timeDisplay}</span>
-            <span class="details-val-secondary">${event.timeMalayalam}</span>
             <span class="details-val-secondary">${event.muhurthamTimeWindow}</span>
           </div>
         </div>

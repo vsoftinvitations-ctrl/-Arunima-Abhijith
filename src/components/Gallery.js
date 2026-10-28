@@ -37,14 +37,6 @@ export function renderGallery() {
 
   return `
     <section id="photo-gallery" class="gallery-section">
-      <!-- Top Pill Badge from reference image -->
-      <div class="gallery-badge-pill reveal-on-scroll">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-        </svg>
-        <span>VISUAL JOURNEY</span>
-      </div>
-
       <h2 class="gallery-section-title reveal-on-scroll">OUR STORY</h2>
       <p class="gallery-subtitle reveal-on-scroll">Moments captured along our path to forever</p>
       <div class="gallery-accent-line reveal-on-scroll"></div>
@@ -54,16 +46,6 @@ export function renderGallery() {
         <div class="story-cards-cluster" id="gallery-row-track">
           ${cardsHtml}
         </div>
-      </div>
-
-      <!-- Interactive Reveal Button from reference image -->
-      <div class="gallery-interactive-reveal reveal-on-scroll">
-        <button class="gallery-reveal-btn" id="open-interactive-gallery" aria-label="Interactive Reveal">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-          </svg>
-          <span>INTERACTIVE REVEAL</span>
-        </button>
       </div>
 
       <!-- Lightbox Modal -->

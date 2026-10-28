@@ -1,83 +1,81 @@
 /**
- * Kerala Hindu Wedding Digital Invitation Data Configuration
- * Easily editable for multiple clients. Replace placeholders with client details.
+ * Wedding Digital Invitation Data Configuration (English Only)
+ * Arunima & Abhijith Wedding Invitation
  */
 
 export const weddingData = {
   // Couple Information
   bride: {
-    name: "Anjana Menon",
-    malayalamName: "അഞ്ജന മേനോൻ",
-    qualifications: "B.Tech, MS",
+    name: "Dr. Arunima Madhu",
+    shortName: "Dr. Arunima",
+    qualifications: "",
     image: "/assets/bride.jpg",
     bio: "Daughter of our beloved family, embarking on a sacred new chapter of life with grace and devotion.",
     parents: {
-      father: "K. P. Radhakrishnan Menon",
-      mother: "Geetha Radhakrishnan",
-      houseName: "Sreevalsam Tharavadu",
-      city: "Payyanur, Kannur, Kerala"
+      father: "Madhu T. S",
+      mother: "Reji Madhu",
+      houseName: "",
+      city: ""
     }
   },
   groom: {
-    name: "Rahul Nambiar",
-    malayalamName: "രാഹുൽ നമ്പ്യാർ",
-    qualifications: "M.Tech, Software Architect",
+    name: "Abhijith V Nair",
+    shortName: "Abhijith",
+    qualifications: "",
     image: null,
     bio: "Son of our esteemed family, blessed to begin this divine voyage of love, harmony, and togetherness.",
     parents: {
-      father: "M. V. Balachandran Nambiar",
-      mother: "Shailaja Balachandran",
-      houseName: "Anugraha Illam",
-      city: "Thiruvambady, Thrissur, Kerala"
+      father: "Vinayachandran Nair",
+      mother: "Usha Vinayachandran",
+      houseName: "",
+      city: ""
     }
   },
 
   // Wedding Muhurtham & Event Details
   event: {
-    muhurthamMalayalam: "വിവാഹം",
-    dateDisplay: "Sunday, 15 February 2027",
-    dateMalayalam: "2027 ഫെബ്രുവരി 15, ഞായറാഴ്ച",
-    malayalamKollamEra: "1202 കുംഭം 3 (ഉത്രാടം നക്ഷത്രം)", // Traditional Kollam calendar
-    timeDisplay: "10:30 AM",
-    timeMalayalam: "രാവിലെ 10:30 ന്",
-    muhurthamTimeWindow: "Muhurtham: 10:15 AM – 10:55 AM (മേട ലഗ്നത്തിൽ)",
-    venueName: "Sree Krishna Kalyana Mandapam",
-    venueAddress: "Temple Gate Road, Near Rajarajeshwara Temple",
-    city: "Taliparamba, Kannur, Kerala",
-    googleMapsUrl: "https://maps.google.com/?q=Taliparamba,+Kannur,+Kerala,+India",
-    googleCalendarTitle: "Wedding of Rahul & Anjana",
-    googleCalendarDescription: "You are cordially invited with family to celebrate the auspicious Kerala Hindu wedding of Rahul Nambiar & Anjana Menon.",
+    muhurthamLabel: "Wedding Ceremony",
+    dateDisplay: "Saturday, 12 December 2026",
+    timeDisplay: "12:15 PM – 12:59 PM",
+    muhurthamTimeWindow: "Muhurtham: 12:15 PM – 12:59 PM",
+    venueName: "St. George Parish Hall",
+    venueAddress: "Pallikavala, Kattappana",
+    city: "Idukki, Kerala – 685515",
+    googleMapsUrl: "https://maps.app.goo.gl/HjW5yW56Rpsv89Q59?utm_source=chatgpt.com",
+    googleCalendarTitle: "Wedding of Arunima & Abhijith",
+    googleCalendarDescription: "You are cordially invited with family to celebrate the wedding of Dr. Arunima Madhu & Abhijith V Nair at St. George Parish Hall, Kattappana, Idukki, Kerala.",
     // Target ISO date for the live countdown timer (YYYY-MM-DDTHH:mm:ss)
-    targetCountdownDate: "2027-02-15T10:30:00"
+    targetCountdownDate: "2026-12-12T12:15:00"
+  },
+
+  // RSVP Details (Accept & Decline Scenarios)
+  rsvp: {
+    whatsappNumber: "919778137459",
+    acceptMessage: "Hello Arunima & Abhijith, we are delighted to attend your wedding celebration!🎉🤍",
+    declineMessage: "Hello Arunima & Abhijith, we won't be able to attend your wedding celebration, but our heartfelt blessings and warm wishes are with you both!🤍✨"
   },
 
   // Sacred Ceremonies Timeline
   ceremonies: [
     {
       id: "ceremony-1",
-      malayalamTitle: "നിശ്ചയം",
-      englishTitle: "Engagement & Welcome",
-      time: "10:00 AM",
-      timeMalayalam: "രാവിലെ 10:00 ന്",
-      description: "Auspicious arrival of families, exchange of bridal garland & elders' blessings.",
+      englishTitle: "Guest Welcome & Gathering",
+      time: "11:30 AM",
+      description: "Auspicious arrival of family and guests to celebrate the special occasion.",
       icon: "ring"
     },
     {
       id: "ceremony-2",
-      malayalamTitle: "വിവാഹം (താലികെട്ട്)",
       englishTitle: "Wedding Ceremony (Muhurtham)",
-      time: "10:30 AM",
-      timeMalayalam: "രാവിലെ 10:30 ന്",
-      description: "Sacred Thalikettu, exchanging garlands (Varmala) around the glowing Nilavilakku and Sindoor daan.",
+      time: "12:15 PM – 12:59 PM",
+      description: "Sacred wedding ceremony, exchanging of garlands and marital vows in the presence of loved ones.",
       icon: "lamp"
     },
     {
       id: "ceremony-3",
-      malayalamTitle: "സദ്യ",
       englishTitle: "Traditional Wedding Feast",
-      time: "12:30 PM",
-      timeMalayalam: "ഉച്ചയ്ക്ക് 12:30 ന്",
-      description: "Grand traditional Kerala vegetarian Sadya served on fresh plantain leaves.",
+      time: "01:00 PM onwards",
+      description: "Delicious grand traditional feast served to celebrate the joyful union of Arunima & Abhijith.",
       icon: "leaf"
     }
   ],
@@ -86,42 +84,34 @@ export const weddingData = {
   galleryImages: [
     {
       src: "/assets/couple.jpg",
-      alt: "Couple walking in temple corridor",
+      alt: "Dr. Arunima Madhu & Abhijith V Nair",
       caption: "A journey of eternal companionship"
+    },
+    {
+      src: "/assets/bride.jpg",
+      alt: "Radiant Bride Dr. Arunima Madhu",
+      caption: "Radiant bride adorned in traditional Kerala Kasavu"
     },
     {
       src: "/assets/details.jpg",
       alt: "Sacred traditional wedding offerings",
       caption: "Sacred rituals & auspicious beginnings"
-    },
-    {
-      src: "/assets/bride.jpg",
-      alt: "Bride in traditional Kasavu saree",
-      caption: "The radiant bride adorned in Kerala Kasavu"
     }
   ],
 
   // Sacred Text & Blessings
   texts: {
-    guruVandanam: "ശ്രീ ഗുരുഭ്യോ നമഃ",
-    sanskritShloka: [
-      "മംഗളം ഭഗവാൻ വിഷ്ണുഃ",
-      "മംഗളം ഗരുഡധ്വജഃ",
-      "മംഗളം പുണ്ഡരീകാക്ഷഃ",
-      "മംഗളായ തനോ ഹരിഃ"
-    ],
     elderBlessingsEng: "With the blessings of our elders\nand the grace of the divine",
     twoHeartsEng: "Two hearts,\none beautiful beginning.",
-    greetingMalayalam: "വിവാഹ മംഗളാശംസകളോടെ",
+    greetingEnglish: "With Warm Wishes & Blessings",
     coupleIntroHeading: "Together with our families",
     coupleIntroTagline: "Two souls, one journey, and a lifetime of beautiful moments.",
     weddingTogethernessQuote: "A wedding is the sacred union of two souls and the joyful coming together of two families—bound by love, cherished traditions, and the blessing of a lifetime of togetherness.",
-    invitationHeadingMalayalam: "വിവാഹത്തിലേക്ക് സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു",
+    invitationHeading: "Cordially Inviting You",
     invitationSubtitleEng: "With joy in our hearts,\nwe invite you to celebrate our wedding.",
     familyHeading: "With the blessings of our families",
     countdownHeading: "Counting the moments...",
-    locationHeadingMalayalam: "വരൂ...\nഈ മംഗള മുഹൂർത്തത്തിന് സാക്ഷികളാകൂ",
-    finalBlessingMalayalam: "നിങ്ങളുടെ സാന്നിധ്യവും അനുഗ്രഹങ്ങളും\nഞങ്ങളുടെ പുതിയ ജീവിതത്തിന്റെ\nഏറ്റവും മനോഹരമായ തുടക്കമായിരിക്കും.",
+    locationHeading: "Join Us to Celebrate Our Wedding",
     finalBlessingEnglish: "Your presence and blessings\nwill make our beginning even more beautiful.",
     withLove: "With Love"
   }

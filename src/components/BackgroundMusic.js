@@ -9,7 +9,7 @@ let hasStarted = false;
 
 export function startBackgroundMusic() {
   if (!bgAudio) {
-    bgAudio = document.getElementById('bg-music') || new Audio('/eeran-megham.mp3');
+    bgAudio = document.getElementById('bg-music') || new Audio('/wedding.mp3');
     if (!bgAudio.id) bgAudio.id = 'bg-music';
     bgAudio.loop = true;
     bgAudio.preload = 'auto';
@@ -21,7 +21,6 @@ export function startBackgroundMusic() {
   if (playPromise !== undefined) {
     playPromise.then(() => {
       hasStarted = true;
-      removeInteractionListeners();
       
       // Gentle smooth fade-in to pleasant volume
       let vol = 0;
@@ -39,27 +38,12 @@ export function startBackgroundMusic() {
   }
 }
 
-function handleFirstInteraction() {
-  startBackgroundMusic();
-}
-
-function removeInteractionListeners() {
-  const events = ['click', 'touchstart', 'touchend', 'pointerdown', 'keydown', 'scroll'];
-  events.forEach((evt) => {
-    window.removeEventListener(evt, handleFirstInteraction, { capture: true });
-    document.removeEventListener(evt, handleFirstInteraction, { capture: true });
-  });
-}
-
 export function initBackgroundMusic() {
-  // 1. Try to autoplay immediately when link opens
-  startBackgroundMusic();
-
-  // 2. Also register listeners on any first user interaction (click, tap, scroll, key)
-  // in case the browser enforces strict user gesture policies before allowing audio
-  const events = ['click', 'touchstart', 'touchend', 'pointerdown', 'keydown', 'scroll'];
-  events.forEach((evt) => {
-    window.addEventListener(evt, handleFirstInteraction, { capture: true, passive: true, once: true });
-    document.addEventListener(evt, handleFirstInteraction, { capture: true, passive: true, once: true });
-  });
+  // Pre-load audio object without autoplaying
+  if (!bgAudio) {
+    bgAudio = document.getElementById('bg-music') || new Audio('/wedding.mp3');
+    if (!bgAudio.id) bgAudio.id = 'bg-music';
+    bgAudio.loop = true;
+    bgAudio.preload = 'auto';
+  }
 }

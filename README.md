@@ -1,3 +1,4 @@
-# Rahul-Anjana
+# Arunima & Abhijith
 
-Auspicious Kerala Hindu Wedding Digital Invitation website for Rahul & Anjana.
+Wedding Digital Invitation website for Dr. Arunima Madhu & Abhijith V Nair.
+

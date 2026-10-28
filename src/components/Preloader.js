@@ -4,9 +4,9 @@ import { startBackgroundMusic } from './BackgroundMusic.js';
  * Preloader Component with Brittany Signature Script Handwriting Animation
  * Background: /assets/preloder.png
  * Center Writings:
- *   Rahul
+ *   Arunima
  *   &
- *   Anjana
+ *   Abhijith
  */
 
 export function renderPreloader() {
@@ -14,7 +14,7 @@ export function renderPreloader() {
     <div id="wedding-preloader" class="wedding-preloader" role="dialog" aria-modal="true" aria-label="Wedding Invitation Preloader">
       <!-- Fullscreen Background Image with Ken Burns effect and cinematic vignette -->
       <div class="preloader-bg-media">
-        <img src="/assets/preloder.png" alt="Rahul & Anjana" class="preloader-bg-img" />
+        <img src="/assets/preloder.png" alt="Arunima &amp; Abhijith" class="preloader-bg-img" />
         <div class="preloader-overlay"></div>
       </div>
 
@@ -51,10 +51,10 @@ export function renderPreloader() {
 
         <!-- Brittany Signature Script Handwriting Animation Container -->
         <div class="preloader-script-container" id="preloader-script-box">
-          <!-- Line 1: Rahul -->
-          <div class="script-line script-rahul">
-            <span class="script-text">Rahul</span>
-            <span class="calligraphy-pen-spark" id="spark-rahul"></span>
+          <!-- Line 1: Arunima -->
+          <div class="script-line script-arunima script-rahul">
+            <span class="script-text">Arunima</span>
+            <span class="calligraphy-pen-spark" id="spark-arunima"></span>
           </div>
 
           <!-- Line 2: & Ampersand -->
@@ -62,10 +62,10 @@ export function renderPreloader() {
             <span class="script-text">&amp;</span>
           </div>
 
-          <!-- Line 3: Anjana -->
-          <div class="script-line script-anjana">
-            <span class="script-text">Anjana</span>
-            <span class="calligraphy-pen-spark" id="spark-anjana"></span>
+          <!-- Line 3: Abhijith -->
+          <div class="script-line script-abhijith script-anjana">
+            <span class="script-text">Abhijith</span>
+            <span class="calligraphy-pen-spark" id="spark-abhijith"></span>
           </div>
 
           <!-- Calligraphy Flourish Line underneath -->
@@ -86,7 +86,7 @@ export function renderPreloader() {
 
         <!-- Subtitle & Date -->
         <div class="preloader-subtext">
-          <p class="preloader-date">15 . FEBRUARY . 2027</p>
+          <p class="preloader-date">12 . DECEMBER . 2026</p>
         </div>
       </div>
     </div>

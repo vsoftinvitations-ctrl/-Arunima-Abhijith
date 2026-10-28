@@ -3,6 +3,7 @@ import { renderPreloader, initPreloader } from './components/Preloader.js';
 import { initRosePetals } from './components/RosePetals.js';
 import { initBackgroundMusic } from './components/BackgroundMusic.js';
 import { renderOpeningSection, initOpeningInteractions } from './components/OpeningSection.js';
+import { renderGettingMarriedSection, initGettingMarriedSlider } from './components/GettingMarriedSection.js';
 import { renderCoupleSection } from './components/CoupleSection.js';
 import { renderWeddingDetails } from './components/WeddingDetails.js';
 import { renderKeralaVisual } from './components/KeralaVisual.js';
@@ -11,6 +12,7 @@ import { renderFamilySection } from './components/FamilySection.js';
 import { renderCountdown, initCountdownTimer } from './components/Countdown.js';
 import { renderGallery, initGalleryCarousel } from './components/Gallery.js';
 import { renderLocationSection } from './components/LocationSection.js';
+import { renderRSVPSection } from './components/RSVPSection.js';
 import { renderClosingSection } from './components/ClosingSection.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   app.innerHTML = `
     ${renderPreloader()}
     ${renderOpeningSection()}
+    ${renderGettingMarriedSection()}
     ${renderCoupleSection()}
     ${renderWeddingDetails()}
     ${renderKeralaVisual()}
@@ -27,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ${renderCountdown()}
     ${renderGallery()}
     ${renderLocationSection()}
+    ${renderRSVPSection()}
     ${renderClosingSection()}
   `;
 
@@ -35,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackgroundMusic();
   initRosePetals();
   initOpeningInteractions();
+  initGettingMarriedSlider();
   initCountdownTimer();
   initGalleryCarousel();
 
