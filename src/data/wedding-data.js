@@ -36,8 +36,8 @@ export const weddingData = {
   event: {
     muhurthamLabel: "Wedding Ceremony",
     dateDisplay: "Saturday, 12 December 2026",
-    timeDisplay: "12:15 PM – 12:59 PM",
-    muhurthamTimeWindow: "Muhurtham: 12:15 PM – 12:59 PM",
+    timeDisplay: "11:15 AM - 11:59 AM",
+    muhurthamTimeWindow: "Muhurtham: 11:15 AM - 11:59 AM",
     venueName: "St. George Parish Hall",
     venueAddress: "Pallikavala, Kattappana",
     city: "Idukki, Kerala – 685515",
@@ -45,7 +45,7 @@ export const weddingData = {
     googleCalendarTitle: "Wedding of Arunima & Abhijith",
     googleCalendarDescription: "You are cordially invited with family to celebrate the wedding of Dr. Arunima Madhu & Abhijith V Nair at St. George Parish Hall, Kattappana, Idukki, Kerala.",
     // Target ISO date for the live countdown timer (YYYY-MM-DDTHH:mm:ss)
-    targetCountdownDate: "2026-12-12T12:15:00"
+    targetCountdownDate: "2026-12-12T11:15:00"
   },
 
   // RSVP Details (Accept & Decline Scenarios)
@@ -60,14 +60,14 @@ export const weddingData = {
     {
       id: "ceremony-1",
       englishTitle: "Guest Welcome & Gathering",
-      time: "11:30 AM",
+      time: "10:30 AM",
       description: "Auspicious arrival of family and guests to celebrate the special occasion.",
       icon: "ring"
     },
     {
       id: "ceremony-2",
       englishTitle: "Wedding Ceremony (Muhurtham)",
-      time: "12:15 PM – 12:59 PM",
+      time: "11:15 AM - 11:59 AM",
       description: "Sacred wedding ceremony, exchanging of garlands and marital vows in the presence of loved ones.",
       icon: "lamp"
     },
