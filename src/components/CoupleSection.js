@@ -18,7 +18,7 @@ export function renderCoupleSection() {
           <div class="couple-card-parents">
             <p class="couple-parents-line">D/o Smt. ${bride.parents.mother} &amp; Sri. ${bride.parents.father}</p>
             ${bride.parents.houseName || bride.parents.city ? `<p class="couple-address-line text-muted">${bride.parents.houseName ? `${bride.parents.houseName}, ` : ''}${bride.parents.city}</p>` : ''}
-            ${bride.siblingsDisplay ? `<p class="couple-sibling-line"><span class="couple-sibling-label">${bride.siblingLabel || 'Sister'}:</span> <span class="couple-sibling-name">${bride.siblingsDisplay}</span></p>` : ''}
+            ${bride.siblingsDisplay ? `<p class="couple-sibling-line"><span class="couple-sibling-label">${(bride.siblingLabel || 'Sister').endsWith(':') || (bride.siblingLabel || '').toLowerCase().endsWith('of') ? (bride.siblingLabel || 'Sister') : `${bride.siblingLabel || 'Sister'}:`}</span> <span class="couple-sibling-name">${bride.siblingsDisplay}</span></p>` : ''}
           </div>
         </div>
 
@@ -30,7 +30,7 @@ export function renderCoupleSection() {
           <div class="couple-card-parents">
             <p class="couple-parents-line">S/o Smt. ${groom.parents.mother} &amp; Sri. ${groom.parents.father}</p>
             ${groom.parents.houseName || groom.parents.city ? `<p class="couple-address-line text-muted">${groom.parents.houseName ? `${groom.parents.houseName}, ` : ''}${groom.parents.city}</p>` : ''}
-            ${groom.siblingsDisplay ? `<p class="couple-sibling-line"><span class="couple-sibling-label">${groom.siblingLabel || 'Siblings'}:</span> <span class="couple-sibling-name">${groom.siblingsDisplay}</span></p>` : ''}
+            ${groom.siblingsDisplay ? `<p class="couple-sibling-line"><span class="couple-sibling-label">${(groom.siblingLabel || 'Siblings').endsWith(':') || (groom.siblingLabel || '').toLowerCase().endsWith('of') ? (groom.siblingLabel || 'Siblings') : `${groom.siblingLabel || 'Siblings'}:`}</span> <span class="couple-sibling-name">${groom.siblingsDisplay}</span></p>` : ''}
           </div>
         </div>
       </div>

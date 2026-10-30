@@ -35,12 +35,11 @@ export const weddingData = {
       houseName: "",
       city: ""
     },
-    siblingLabel: "Siblings",
-    siblingsDisplay: "Sreehari, Aswathy, Rajagopal Sk",
+    siblingLabel: "Brother of",
+    siblingsDisplay: "Aswathy, Rajagopal S. K",
     siblings: [
-      { name: "Sreehari", relation: "Brother" },
       { name: "Aswathy", relation: "Sister" },
-      { name: "Rajagopal Sk", relation: "Brother" }
+      { name: "Rajagopal S. K", relation: "Brother" }
     ]
   },
 
